@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth / 750 * 100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function() {
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth / 750 * 100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				border: none;
+			}
+			
+			li {
+				list-style: none;
+			}
+			
+			img {
+				display: block;
+				width: 100%;
+			}
+			
+			.wrapper {
+				background: #730101;
+			}
+			
+			.countwrapper {
+				position: relative;
+				
+			}
+			
+			.countdown {
+				width: 4rem;
+				margin: 0 auto;
+			}
+			
+			.countwrapper span {
+				font-size: .22rem;
+				color: #fff;
+			}
+			
+			h3 {
+				font-size: .26rem;
+				color: #fff;
+				text-align: center;
+				margin-top: .25rem;
+			}
+			#countdown{
+				height:.48rem;
+				line-height:.48rem;
+				font-size:.22rem;
+				text-align: center;
+				color:#fff;
+			}
+			#countdown span{
+				text-align: center;
+				display:inline-block;
+				width:.36rem;
+				height:.48rem;
+				background:#fff;
+				color:#000;
+				line-height:.48rem;
+				font-weight: 600;
+				font-size:.3rem;
+				margin-right:.2rem;
+				margin-left:.1rem;
+			}
+			.link{
+				overflow:hidden;
+				margin-top:.35rem;
+				padding:0 .15rem;
+			}
+			#link01{
+				display:block;
+				width:7.2rem;
+				margin:0 auto;
+				margin-bottom:.15rem;
+			}
+
+			#link02{
+				display:block;
+				float:left;
+				width:3.53rem;
+				margin-right:.1rem;
+			}
+			#link03{
+				display:block;
+				float:left;
+				width:3.53rem;
+			}
+			.h401{
+				background:url(http://og20zwqwb.bkt.clouddn.com/yeartitlebg.jpg);
+				height:1.22rem;
+				width:100%;
+				background-size: 7.5rem;
+				font-size:.36rem;
+				padding-top:.43rem;
+				padding-left:2.7rem;
+				color:#fff;
+				box-sizing: border-box;
+			}
+			.link2 ul{
+				overflow:hidden;
+				padding:0 .15rem;
+			}
+			.link2 ul li{
+				float:left;
+				width:3.53rem;
+				height:4.61rem;
+				margin-bottom:.15rem;
+			}
+			.link2 ul li:nth-child(odd){
+				margin-right:.12rem;
+			}
+			.h402{
+				background:url(http://og20zwqwb.bkt.clouddn.com/yeartitlebg01.png) no-repeat;
+				background-size: 7.5rem;
+				width:100%;
+				height:1.24rem;
+			}
+			.link3 ul {
+				overflow:hidden;
+				padding-left:.15rem;
+			}
+			.link3 ul li{
+				float:left;
+				margin-bottom:.15rem;
+			}
+			.link3 ul li:nth-child(1),.link3 ul li:nth-child(2){
+				width:3.53rem;
+				height:2.18rem;
+			}
+			.link3 ul li:nth-child(2){
+				margin-left:.15rem;
+			}
+			.link3 ul li:nth-child(3),.link3 ul li:nth-child(4),.link3 ul li:nth-child(5){
+				width:2.30rem;
+				height:3.05rem;	
+			}
+			.link3 ul li:nth-child(3),.link3 ul li:nth-child(4){
+				margin-right:.15rem;
+			}
+			.h403{
+				background:url(http://og20zwqwb.bkt.clouddn.com/yeartitlebg02.png) no-repeat;
+				background-size: 7.5rem;
+				width:100%;
+				height:1.15rem;
+			}
+			.goods ul{
+				overflow:hidden;
+			}
+			.goods ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			.goods ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			.goods li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			.goods li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/newyearhbg.png" alt="" />
+			</header>
+			<div class="countwrapper">
+				<div id="countdown">
+					
+				</div>
+			</div>
+			<h3>---距离双旦嘉年华结束仅剩---</h3>
+			<div class="link">
+				<a href="./together.html" id="link01">
+					<img src="http://og20zwqwb.bkt.clouddn.com/yearlink01.jpg" alt=""  style="width:100%;"/>
+				</a>
+				<a href="./timeLimite.html" id="link02">
+					<img src="http://og20zwqwb.bkt.clouddn.com/yearlink02.jpg" alt=""  style="width:100%;"/>
+				</a>
+				<a href="./seckill.html" id="link03">
+					<img src="http://og20zwqwb.bkt.clouddn.com/yearlink03.jpg" alt=""  style="width:100%;"/>
+				</a>
+				
+			</div>
+			<h4 class="h401">真真世博会</h4>
+			<div class="link2">
+				<ul>
+					<li>
+						<a href="./europe.html">
+							<img src="http://og20zwqwb.bkt.clouddn.com/yearlink04.jpg" alt="" style="width:100%;"/>
+						</a>
+					</li>
+					<li>
+						<a href="./australia.html">
+							<img src="http://og20zwqwb.bkt.clouddn.com/yearlink05.jpg" alt="" style="width:100%;"/>
+						</a>
+					</li>
+					<li>
+						<a href="./northAmerica.html">
+							<img src="http://og20zwqwb.bkt.clouddn.com/yearlink06.jpg" alt="" style="width:100%;"/>
+						</a>
+					</li>
+					<li>
+						<a href="./japen.html">
+							<img src="http://og20zwqwb.bkt.clouddn.com/yearlink07.jpg" alt="" style="width:100%;"/>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<h4 class="h402"></h4>
+			<div class="link3">
+				<ul>
+					<li><a href="./together.html#cosmetic"><img src="http://og20zwqwb.bkt.clouddn.com/yearlink08.jpg" alt="" style="width:100%;"/></a></li>
+					<li><a href="./together.html#baby"><img src="http://og20zwqwb.bkt.clouddn.com/yearlink09.jpg" alt="" style="width:100%;"/></a></li>
+					<li><a href="./together.html#luxurious"><img src="http://og20zwqwb.bkt.clouddn.com/yearlink10.jpg" alt="" style="width:100%;"/></a></li>
+					<li><a href="./together.html#life"><img src="http://og20zwqwb.bkt.clouddn.com/yearlink11.jpg" alt="" style="width:100%;"/></a></li>
+					<li><a href="./together.html#nutrition"><img src="http://og20zwqwb.bkt.clouddn.com/yearlink12.jpg" alt="" style="width:100%;"/></a></li>
+					
+				</ul>
+			</div>
+			<h4 class="h403"></h4>
+			<div class="goods">
+				<ul>
+					<li data-id="33109">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33109-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉1段800g 0到6个月</p>
+						<div class="price">
+							￥<span>121</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33111">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33111-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉2段800g 6到12个月</p>
+						<div class="price">
+							￥<span>121</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33112">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33112-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉3段800g 2到3岁</p>
+						<div class="price">
+							￥<span>121</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35414">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35414-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Comvita康维他天然麦卢卡蜂蜜UMF10 500g 呵护肠胃</p>
+						<div class="price">
+							￥<span>325</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35413">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35413-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">澳洲Swisse钙片 维生素D3青少年孕妇老人成人补钙150粒VD</p>
+						<div class="price">
+							￥<span>130</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35486">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35486-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">新西兰Comvita康维他麦卢卡10 儿童成人柠檬蜂蜜味棒棒糖10支</p>
+						<div class="price">
+							￥<span>70</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35386">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35386-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNCbaby鱼油、液体状更易baby吸收</p>
+						<div class="price">
+							￥<span>321</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35384">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35384-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC儿童咀嚼钙片、补钙、强健骨骼</p>
+						<div class="price">
+							￥<span>315</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35302">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35302-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹樱花润肤露 250ml</p>
+						<div class="price">
+							￥<span>169</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35303">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35303-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹乳木果丰凝润肤露250ml</p>
+						<div class="price">
+							￥<span>199</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33084">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33084-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Coreana 高丽雅娜 orthia 欧诗雅 超完美抗皱修护霜 50ml</p>
+						<div class="price">
+							￥<span>81</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33091">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33091-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Leaders 丽得姿 美蒂优氨基酸隐形毛孔面膜 10片装</p>
+						<div class="price">
+							￥<span>90</span><button>立即购买</button>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+	<script>
+	
+	
+		function setupWebViewJavascriptBridge(callback) {
+	        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+	        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+	        window.WVJBCallbacks = [callback];
+	        var WVJBIframe = document.createElement('iframe');
+	        WVJBIframe.style.display = 'none';
+	        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+	        document.documentElement.appendChild(WVJBIframe);
+	        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+	   }
+		window.onload = function() {
+			showtime();
+
+			function addZero(i) {
+				if(i < 10) {
+					i = "0" + i;
+				}
+				return i;
+			}
+
+			function showtime() {
+				var nowtime = new Date();
+				var endtime = new Date("2017/01/03,00:00:00");
+				var lefttime = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+				var d = parseInt(lefttime / (24 * 60 * 60));
+				var h = parseInt(lefttime / (60 * 60) % 24);
+				var m = parseInt(lefttime / 60 % 60);
+				var s = parseInt(lefttime % 60);
+				h = addZero(h);
+				m = addZero(m);
+				s = addZero(s);
+				var html = '<span>'+d+'</span>天 <span>'+h+'</span>时 <span>'+m+'</span>分<span>'+s+'</span>秒';
+				$('#countdown').html(html)
+				
+				if(lefttime <= 0) {
+					
+					$('#countdown').html('活动结束');
+					return; 
+				}
+				setTimeout(showtime, 1000);
+			}
+			
+			
+//			$('li','.goods').on('click',function(){
+//				console.log($(this).attr('data-id'));
+//			})
+			
+			
+			//检测终端是安卓或ios
+	        var u = navigator.userAgent;
+			var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+			var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+			if(isAndroid){
+				$('li','.goods').on('click',function(e){
+					var goodid= $(this).attr('data-id');
+					console.log(goodid)
+					//与安卓终端交互
+					window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+							    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+							    "height" : 287,
+							    "layout" : "grid",
+							    "link" : "to_goods_"+goodid,
+							    "linkType" : "app-inner",
+							    "name" : "to_goods_"+goodid,
+							    "position" : "4",
+							    "title" : "今日特惠",
+							    "type" : "nav",
+							    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+							    "width" : 212
+							}
+						
+					}, function(response) {})
+					e.preventDefault();
+					return false;
+				});
+			}else{
+				setupWebViewJavascriptBridge(function(bridge) {
+					$('li','.goods').on('click',function(e){
+						//alert('iphone');
+						var goodid=$(this).attr('data-id');
+						console.log(goodid);
+						e.preventDefault()
+						bridge.callHandler('testObjcCallback',{
+							'good_id':goodid,
+							"detailData":{
+							    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+							    "height" : 287,
+							    "layout" : "grid",
+							    "link" : "to_goods_"+goodid,
+							    "linkType" : "app-inner",
+							    "name" : "to_goods_"+goodid,
+							    "position" : "4",
+							    "title" : "今日特惠",
+							    "type" : "nav",
+							    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+							    "width" : 212
+							}
+						}, function(response) {})
+					});
+				})
+			}	
+		}
+	</script>
+
+</html>

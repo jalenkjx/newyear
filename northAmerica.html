@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<title></title>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				border:none;
+			}
+			li{
+				list-style: none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			.wrapper{
+				background:#efefef;
+			}
+			h2{
+				font-size:.5rem;
+				height:1rem;
+				width:100%;
+				text-align: center;
+				line-height:1rem;
+				box-sizing: border-box;
+			}
+			h2 img{
+				width:100%;
+			}
+			h2 span{
+				display:inline-block;
+				text-align: center;
+				height:1rem;
+				font-size:.3rem;
+				line-height:1rem;
+			}
+			
+			ul{
+				overflow:hidden;
+			}
+			ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/northamerica.jpg" alt="" />
+			</header>
+			<h2><img src="http://og20zwqwb.bkt.clouddn.com/christmastitle.png" alt="" /></h2>
+			<section>
+				<ul>
+					<li data-id="35391">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35391-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC、儿童Omega3</p>
+						<div class="price">
+							￥<span>415</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35389">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35389-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC、儿童维生素咀嚼软糖</p>
+						<div class="price">
+							￥<span>421</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35388">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35388-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC、儿童复合维生素咀嚼片、补充儿童体内所需的各种维生素</p>
+						<div class="price">
+							￥<span>401</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35387">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35387-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC儿童鱼油</p>
+						<div class="price">
+							￥<span>485</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35386">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35386-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNCbaby鱼油、液体状更易baby吸收</p>
+						<div class="price">
+							￥<span>321</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35384">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35384-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">美国GNC儿童咀嚼钙片、补钙、强健骨骼</p>
+						<div class="price">
+							￥<span>315</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35383">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35383-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">加拿大kirkland可兰儿童综合维生素软糖250粒</p>
+						<div class="price">
+							￥<span>240</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35067">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35067-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">加拿大hoslita蜂胶胶囊，180粒装。降血糖抗菌消炎提高免疫力等等诸多功效，降血糖效果尤其佳</p>
+						<div class="price">
+							￥<span>262</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35066">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35066-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">Bill儿童牛初乳，增强免疫系统，帮助儿童骨骼成长发育，含有丰富的免疫球蛋白（IgG）</p>
+						<div class="price">
+							￥<span>206</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35065">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35065-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">伟博儿童鱼油</p>
+						<div class="price">
+							￥<span>226</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35011">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35011-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">加拿大bill野生蓝莓护眼咀嚼片，四岁以上儿童及成人均可食用</p>
+						<div class="price">
+							￥<span>215</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35140">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35140-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette Blue 3 Ice 旅行装手动剃须刀 6片装</p>
+						<div class="price">
+							￥<span>54</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35142">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35142-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">美国 Gillette吉列男士剃须刀BLUE 3 Restage 6支装</p>
+						<div class="price">
+							￥<span>54</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35122">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35122-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">美国 Gillette吉列系列男士剃须泡 Conditioning 250ml</p>
+						<div class="price">
+							￥<span>34</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35124">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35124-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">美国 Gillette吉列系列男士剃须泡 Sensitive 250ml</p>
+						<div class="price">
+							￥<span>34</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35147">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35147-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette BLUE 3 手动剃须刀 1支装</p>
+						<div class="price">
+							￥<span>34</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35125">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35125-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette 锋速3系列保湿至顺型剃须啫哩 200ml</p>
+						<div class="price">
+							￥<span>36</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35127">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35127-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette 锋速3系列保湿清爽型剃须啫哩 200ml</p>
+						<div class="price">
+							￥<span>36</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35128">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35128-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette 锋速3系列保湿温和型剃须啫哩 200ml</p>
+						<div class="price">
+							￥<span>36</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35421">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35421-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">雅诗兰黛面霜弹性紧实柔肤晚霜50ml提拉紧致淡化细纹抗皱</p>
+						<div class="price">
+							￥<span>820</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35420">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35420-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">雅诗兰黛面霜弹性紧实特润柔肤霜50ml提拉紧致</p>
+						<div class="price">
+							￥<span>820</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35419">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35419-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">雅诗兰黛晶透沁白精华露30ml淡斑淡印补水保湿</p>
+						<div class="price">
+							￥<span>950</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35418">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35418-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">雅诗兰黛多效智妍蕴养眼霜15ml提拉紧致补水保湿</p>
+						<div class="price">
+							￥<span>545</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35416">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35416-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">雅诗兰黛小棕瓶ANR即时修护特润肌透面部精华露50ML</p>
+						<div class="price">
+							￥<span>575</span><button>立即购买</button>
+						</div>
+					</li>
+					
+				</ul>
+			</section>
+		</div>
+	</body>
+	<script>
+		//js与ios交互	
+			function setupWebViewJavascriptBridge(callback) {
+		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+		        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+		        window.WVJBCallbacks = [callback];
+		        var WVJBIframe = document.createElement('iframe');
+		        WVJBIframe.style.display = 'none';
+		        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+		        document.documentElement.appendChild(WVJBIframe);
+		        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+		   }
+		//检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isAndroid){
+			$('li','ul').on('click',function(e){
+				var goodid= $(this).attr('data-id');
+				console.log(goodid)
+				//与安卓终端交互
+				window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+					'good_id':goodid,
+					"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					
+				}, function(response) {})
+				e.preventDefault();
+				return false;
+			});
+		}else{
+			setupWebViewJavascriptBridge(function(bridge) {
+				$('li','ul').on('click',function(e){
+					//alert('iphone');
+					var goodid=$(this).attr('data-id');
+					console.log(goodid);
+					e.preventDefault()
+					bridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					}, function(response) {})
+				});
+			})
+		}	
+		
+	</script>
+</html>

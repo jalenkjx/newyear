@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<title></title>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				border:none;
+			}
+			li{
+				list-style: none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			.wrapper{
+				background:#efefef;
+			}
+			h2{
+				font-size:.5rem;
+				height:1rem;
+				width:100%;
+				text-align: center;
+				line-height:1rem;
+				box-sizing: border-box;
+			}
+			h2 img{
+				width:100%;
+			}
+			h2 span{
+				display:inline-block;
+				text-align: center;
+				height:1rem;
+				font-size:.3rem;
+				line-height:1rem;
+			}
+			
+			ul{
+				overflow:hidden;
+			}
+			ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/japen.jpg" alt="" />
+			</header>
+			<h2><img src="http://og20zwqwb.bkt.clouddn.com/christmastitle.png" alt="" /></h2>
+			<section>
+				<ul>
+					<li data-id="35367">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35367-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">日本unminchg尤妮佳省水1/2化妆棉40枚,[闪电]日本Cosme大赏第一，擦拭后不变形不掉屑</p>
+						<div class="price">
+							￥<span>25</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35364">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35364-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">日本atex便携加热猫咪眼罩恒温USB遮光热敷眼罩消黑眼圈助眠</p>
+						<div class="price">
+							￥<span>230</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35363">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35363-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">花王卫生巾日本本土版粉色25cmx19片紫色30cmx15片蓝色35cmx13片</p>
+						<div class="price">
+							￥<span>38</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35361">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35361-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">女的欲望平腰日本女の欲望200D瘦腿发热欲望丝袜利用阶段性着压的功能设计，从下到上压力逐渐减少，</p>
+						<div class="price">
+							￥<span>75</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35360">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35360-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">日本2016年新款象印超轻保温杯480ml，SC48，世界的全能概念超轻设计独家技术SLIT超薄真空层仅厚1mm</p>
+						<div class="price">
+							￥<span>199</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33084">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33084-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Coreana 高丽雅娜 orthia 欧诗雅 超完美抗皱修护霜 50ml</p>
+						<div class="price">
+							￥<span>81</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33091">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33091-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Leaders 丽得姿 美蒂优氨基酸隐形毛孔面膜 10片装</p>
+						<div class="price">
+							￥<span>90</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33094">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33094-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Leaders 丽得姿 美蒂尤 氨基酸蜗牛面膜 10片装</p>
+						<div class="price">
+							￥<span>90</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33085">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33085-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Coreana 高丽雅娜 SSO 绵羊油面霜 50ml</p>
+						<div class="price">
+							￥<span>131</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33090">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33090-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 Coreana 高丽雅娜topcloud祛斑霜 50ml</p>
+						<div class="price">
+							￥<span>137</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35233">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35233-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">丽得姿第一代补水面膜</p>
+						<div class="price">
+							￥<span>75</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35191">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35191-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">爱茉莉水润唇膏</p>
+						<div class="price">
+							￥<span>45</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35267">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35267-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">黑、白吕洗发水</p>
+						<div class="price">
+							￥<span>135</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35268">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35268-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">紫吕洗发水</p>
+						<div class="price">
+							￥<span>135</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35265">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35265-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">雪花秀润致滋盈水乳精华3件套装</p>
+						<div class="price">
+							￥<span>1235</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35260">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35260-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Whoo后拱辰享雪玉凝系列礼盒套装</p>
+						<div class="price">
+							￥<span>1002</span><button>立即购买</button>
+						</div>
+					</li>
+
+					<li data-id="35259">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35259-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Whoo后 津率享红华凝香水乳护肤套装 补水保湿紧致肌肤</p>
+						<div class="price">
+							￥<span>1075</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35294">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35294-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">日本 Jill Stuart 吉尔斯图尔特 花舞恋唇膏</p>
+						<div class="price">
+							￥<span>149</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35295">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35295-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">日本 Jill Stuart 吉尔斯图亚特 爱恋蝴蝶结5色眼影盘</p>
+						<div class="price">
+							￥<span>259</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35296">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35296-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 笛丝Deoproce蜗牛蜂蜜保湿淡斑面膜 10片装</p>
+						<div class="price">
+							￥<span>59</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35298">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35298-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 笛丝Deoproce色彩多效功能面膜 10片装</p>
+						<div class="price">
+							￥<span>59</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35299">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35299-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 笛丝Deoproce玫瑰石榴双效滋润面膜 10片装</p>
+						<div class="price">
+							￥<span>59</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35300">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35300-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">韩国 笛丝Zenibell珍珠美白补水面膜 10片装</p>
+						<div class="price">
+							￥<span>59</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35310">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35310-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Pororo 宝露露 维他命护唇膏8g</p>
+						<div class="price">
+							￥<span>45</span><button>立即购买</button>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+	<script>
+		//js与ios交互	
+			function setupWebViewJavascriptBridge(callback) {
+		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+		        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+		        window.WVJBCallbacks = [callback];
+		        var WVJBIframe = document.createElement('iframe');
+		        WVJBIframe.style.display = 'none';
+		        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+		        document.documentElement.appendChild(WVJBIframe);
+		        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+		   }
+		//检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isAndroid){
+			$('li','ul').on('click',function(e){
+				var goodid= $(this).attr('data-id');
+				console.log(goodid)
+				//与安卓终端交互
+				window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+					'good_id':goodid,
+					"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					
+				}, function(response) {})
+				e.preventDefault();
+				return false;
+			});
+		}else{
+			setupWebViewJavascriptBridge(function(bridge) {
+				$('li','ul').on('click',function(e){
+					//alert('iphone');
+					var goodid=$(this).attr('data-id');
+					console.log(goodid);
+					e.preventDefault()
+					bridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					}, function(response) {})
+				});
+			})
+		}	
+		
+	</script>
+</html>

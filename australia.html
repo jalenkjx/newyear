@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<title></title>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				border:none;
+			}
+			li{
+				list-style: none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			.wrapper{
+				background:#efefef;
+			}
+			h2{
+				font-size:.5rem;
+				height:1rem;
+				width:100%;
+				text-align: center;
+				line-height:1rem;
+				box-sizing: border-box;
+			}
+			h2 img{
+				width:100%;
+			}
+			h2 span{
+				display:inline-block;
+				text-align: center;
+				height:1rem;
+				font-size:.3rem;
+				line-height:1rem;
+			}
+			
+			ul{
+				overflow:hidden;
+			}
+			ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/australia.jpg" alt="" />
+			</header>
+			<h2><img src="http://og20zwqwb.bkt.clouddn.com/christmastitle.png" alt="" /></h2>
+			<section>
+				<ul>
+					<li data-id="35410">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35410-good-thumb-1.jpg?v=2210" alt="" /></div>
+						<p class="goodsInfo">澳佳宝Blackmores维他命C粉125克</p>
+						<div class="price">
+							￥<span>128</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35409">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35409-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">儿童必里通缓解感冒退烧药5到12岁 100ml</p>
+						<div class="price">
+							￥<span>80</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35408">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35408-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">儿童必里通缓解感冒退烧药1到5岁 100ml</p>
+						<div class="price">
+							￥<span>75</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35411">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35411-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Eaoron 水光针 10ml （2支装）微精华 补水保湿亮肤 收缩毛孔</p>
+						<div class="price">
+							￥<span>305</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35415">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35415-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">澳洲直邮swisse蔓越莓精华胶囊30粒曼越梅 妇科泌尿卵巢保养</p>
+						<div class="price">
+							￥<span>98</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35414">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35414-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Comvita康维他天然麦卢卡蜂蜜UMF10 500g 呵护肠胃</p>
+						<div class="price">
+							￥<span>325</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35413">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35413-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">澳洲Swisse钙片 维生素D3青少年孕妇老人成人补钙150粒VD</p>
+						<div class="price">
+							￥<span>130</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35412">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35412-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">澳洲Healthy Care Grape seed葡萄籽胶囊300粒12000mg</p>
+						<div class="price">
+							￥<span>160</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35178">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35178-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">原装进口爱他美白金3段新生儿婴儿奶粉可澳洲直邮3段铂金装*3罐</p>
+						<div class="price">
+							￥<span>585</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35097">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35097-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲爱他美Aptamil/Profutura白金版高端婴幼儿奶粉2段二段900g*3罐</p>
+						<div class="price">
+							￥<span>658</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35096">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35096-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲直邮可瑞康爱他美Aptamil铂金白金版一1段婴儿奶粉*3罐</p>
+						<div class="price">
+							￥<span>565</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35094">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35094-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲可瑞康羊奶粉3段新西兰进口新生儿婴儿宝宝羊奶粉直邮3段*3罐</p>
+						<div class="price">
+							￥<span>710</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34916">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34916-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲代购新西兰进口A2Platinum1段婴幼儿牛奶粉900g*3罐</p>
+						<div class="price">
+							￥<span>720</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34909">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34909-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲直邮贝拉米3段有机婴幼儿婴儿奶粉三段原装进口*3罐</p>
+						<div class="price">
+							￥<span>530</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34906">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34906-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">直邮澳洲可瑞康羊奶粉2段新西兰进口二段婴儿宝宝羊奶粉*3罐</p>
+						<div class="price">
+							￥<span>710</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34903">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34903-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">直邮澳洲可瑞康羊奶粉1段新西兰进口三段婴儿宝宝羊奶粉*3罐</p>
+						<div class="price">
+							￥<span>710</span><button>立即购买</button>
+						</div>
+					</li>
+
+					<li data-id="34892">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34892-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲进口Bellamys贝拉米2段有机婴幼儿奶粉三段900g可直邮*3罐</p>
+						<div class="price">
+							￥<span>530</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34833">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34833-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲贝拉米Bellamys一段婴儿有机奶粉1段900g*3罐</p>
+						<div class="price">
+							￥<span>530</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34832">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34832-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲Aptamil新西兰爱他美4段金版原装进口奶粉四段900g*3罐</p>
+						<div class="price">
+							￥<span>495</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34824">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34824-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲直邮包邮新西兰可瑞康Aptamil金装爱他美加强婴幼儿奶粉3段*3罐</p>
+						<div class="price">
+							￥<span>495</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34791">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34791-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲直邮爱他美2段新西兰可瑞康Aptamil金装二段新生婴儿奶粉*3罐</p>
+						<div class="price">
+							￥<span>495</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="34776">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/34776-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">澳洲进口Aptamil新西兰爱他美1段一段金0-6月婴儿婴幼儿奶粉*3罐</p>
+						<div class="price">
+							￥<span>495</span><button>立即购买</button>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+	<script>
+		//js与ios交互	
+			function setupWebViewJavascriptBridge(callback) {
+		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+		        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+		        window.WVJBCallbacks = [callback];
+		        var WVJBIframe = document.createElement('iframe');
+		        WVJBIframe.style.display = 'none';
+		        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+		        document.documentElement.appendChild(WVJBIframe);
+		        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+		   }
+		//检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isAndroid){
+			$('li','ul').on('click',function(e){
+				var goodid= $(this).attr('data-id');
+				console.log(goodid)
+				//与安卓终端交互
+				window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+					'good_id':goodid,
+					"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					
+				}, function(response) {})
+				e.preventDefault();
+				return false;
+			});
+		}else{
+			setupWebViewJavascriptBridge(function(bridge) {
+				$('li','ul').on('click',function(e){
+					//alert('iphone');
+					var goodid=$(this).attr('data-id');
+					console.log(goodid);
+					e.preventDefault()
+					bridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					}, function(response) {})
+				});
+			})
+		}	
+		
+	</script>
+</html>

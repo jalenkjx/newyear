@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<title></title>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				border:none;
+			}
+			li{
+				list-style: none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			.wrapper{
+				background:#efefef;
+			}
+			h2{
+				font-size:.5rem;
+				height:1rem;
+				width:100%;
+				text-align: center;
+				line-height:1rem;
+				box-sizing: border-box;
+			}
+			h2 img{
+				width:100%;
+			}
+			h2 span{
+				display:inline-block;
+				text-align: center;
+				height:1rem;
+				font-size:.3rem;
+				line-height:1rem;
+			}
+			
+			ul{
+				overflow:hidden;
+			}
+			ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/19hbg.jpg" alt="" />
+			</header>
+			<h2><img src="http://og20zwqwb.bkt.clouddn.com/christmastitle.png" alt="" /></h2>
+			<section>
+				<ul>
+					<li data-id="35558">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35558-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">独家定制 Yanna Jewellery 欧美款女神必备粉色施华洛世奇水晶耳钉8mm</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35559">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35559-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">独家定制 Yanna Jewellery 欧美款女神必备橄榄绿施华洛世奇水晶耳钉</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35560">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35560-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">独家定制 Yanna Jewellery 欧美款女神必备紫色施华洛世奇水晶耳钉</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35561">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35561-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">独家定制 Yanna Jewellery 欧美款女神必备红色施华洛世奇水晶耳钉</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35551">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35551-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Pororo 宝露露 槐花香婴幼儿洗衣皂200g</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35552">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35552-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Pororo 宝露露 儿童牙膏5岁以上 90g</p>
+						<div class="price">
+							￥<span>129</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35553">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35553-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">美国 Always 殴薇 清香型加长超薄日用护翼卫生巾16片装 L 27CM</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35554">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35554-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">美国 Always 殴薇 清香型3倍防漏超薄抗敏日用护翼卫生巾16片装 L 23CM</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35562">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35562-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">德国 Hipp喜宝婴幼儿营养辅食 南瓜土豆泥 125g</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35563">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33135-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">德国 Hipp喜宝婴幼儿营养辅食 雪梨果汁 200ml</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35556">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35556-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette 剃须泡清新柠檬型 200ml</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35557">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35557-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">吉列 Gillette 剃须泡防敏型 200ml</p>
+						<div class="price">
+							￥<span>19.9</span><button>立即购买</button>
+						</div>
+					</li>
+					
+				</ul>
+			</section>
+		</div>
+	</body>
+	<script>
+		//js与ios交互	
+			function setupWebViewJavascriptBridge(callback) {
+		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+		        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+		        window.WVJBCallbacks = [callback];
+		        var WVJBIframe = document.createElement('iframe');
+		        WVJBIframe.style.display = 'none';
+		        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+		        document.documentElement.appendChild(WVJBIframe);
+		        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+		   }
+		//检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isAndroid){
+			$('li','ul').on('click',function(e){
+				var goodid= $(this).attr('data-id');
+				console.log(goodid)
+				//与安卓终端交互
+				window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+					'good_id':goodid,
+					"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					
+				}, function(response) {})
+				e.preventDefault();
+				return false;
+			});
+		}else{
+			setupWebViewJavascriptBridge(function(bridge) {
+				$('li','ul').on('click',function(e){
+					//alert('iphone');
+					var goodid=$(this).attr('data-id');
+					console.log(goodid);
+					e.preventDefault()
+					bridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					}, function(response) {})
+				});
+			})
+		}	
+		
+	</script>
+</html>

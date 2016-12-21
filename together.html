@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<title></title>
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				padding:0;
+				margin:0;
+				border:0;
+			}
+			li{
+				list-style: none;
+			}
+			html{
+				width:100%;
+				height:100%;
+			}
+			.wrapper{
+				width:100%;
+				overflow-x:hidden;
+				background:#ff7e4a;
+			}
+			nav{
+				z-index: 999;
+			}
+			nav ul {
+				
+				height:.8rem;
+			}
+			nav li.active{
+				background:#fff;
+			}
+			.active a{
+				color:#ff7e4a;
+			}
+			nav ul li{
+				width:1.5rem;
+				height:.8rem;
+				float:left;
+				background:#e35a28;
+				box-sizing: border-box;
+			}
+			nav li a{
+				font-size:.25rem;
+				display:block;
+				width:100%;
+				text-align: center;
+				box-sizing: border-box;
+				margin-top:.25rem;
+				text-decoration: none;
+				color:#fff;
+				border-right:1px solid #fff;
+			}
+			nav li:nth-child(5) a{
+				border:none;
+			}
+			.sec h2{
+				height:1.2rem;
+				background:url(http://og20zwqwb.bkt.clouddn.com/togethertitlebg.png) no-repeat center;
+				background-size:7.5rem;
+				color:#fff;
+				font-size:.28rem;
+				text-align: center;
+				line-height:1.2rem;
+			}
+			.sec ul{
+				overflow:hidden;
+				padding:0 .15rem;
+			}
+			.sec li{
+				float:left;
+				width:3.5rem;
+				height:5.76rem;
+				background:#fff;
+				/*background-size: cover;*/
+				margin-bottom:.2rem;
+			}
+			.sec li:nth-child(odd){
+				margin-right:.2rem;
+			}
+			.imgbox{
+				margin-top:.15rem;
+				margin-left:.34rem;
+				width:2.9rem;
+				margin-bottom:.3rem;
+			}
+			.goodInfo{
+				padding-left:.3rem;
+				padding-right:.4rem;
+			}
+			.goodInfo h3{
+				font-size:.28rem;
+				height:.32rem;
+			}
+			.goodInfo p{
+				margin-top:.05rem;
+				font-size:.26rem;
+				line-height:.42rem;
+				color:#464646;
+				height:.84rem;
+				overflow:hidden;
+			}
+			.goodInfo b{
+				height:.44rem;
+				display:block;
+				font-size:.28rem;
+				float:left;
+				line-height:.44rem;
+			}
+			.goodInfo div{
+				height:.5rem;
+				margin-top:.15rem;
+			}
+			.goodInfo a{
+				display:block;
+				float:right;
+				font-size:.22rem;
+				width:1.2rem;
+				height:.44rem;
+				background:#fff;
+				/*background-size:1.2rem;*/
+				line-height:.44rem;
+				text-align: center;
+				color:#e31436;
+				text-decoration: none;
+				border:1px solid #E31436;
+			}
+			#life,#luxurious,#cosmetic,#nutrition,#baby{
+				position:relative;
+				padding-top:1.2rem;
+				margin-top:-1.2rem;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header><img src="http://og20zwqwb.bkt.clouddn.com/newyearhbg01.png" alt=""  style="width:100%; display:block;"/></header>
+			<nav>
+				<ul>
+					<li class="active"><a href="#cosmetic">国际美妆</a></li>
+					<li><a href="#luxurious">爱上轻奢</a></li>
+					<li><a href="#life">居家生活</a></li>
+					<li><a href="#nutrition">营养保健</a></li>
+					<li><a href="#baby">进口母婴</a></li>
+				</ul>
+			</nav>
+			<div class="sec">
+				<section id="cosmetic">
+					<h2>国际美妆</h2>
+					<ul>
+						<li class="item" data-id="33098">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33098-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>法国 Uriage 依泉特润滋润唇膏</p>
+								<div><b>￥61</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33091">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33091-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>韩国 Leaders 丽得姿 美蒂优氨基酸隐形毛孔面膜 10片装</p>
+									
+								<div><b>￥90</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33094">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33094-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国 Leaders 丽得姿 美蒂尤 氨基酸蜗牛面膜 10片装</p>
+								
+								<div><b>￥90</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33083">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33083-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>	Cargo 12色眼影盘</p>
+								
+								<div><b>￥91</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35182">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35182-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>伊思水果洗面奶</p>
+								
+								<div><b>￥38</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35186">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35186-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>伊思能量10精华</p>
+								
+								<div><b>￥48</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35233">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35233-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>丽得姿第一代补水面膜</p>
+								
+								<div><b>￥75</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35191">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35191-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>爱茉莉水润唇膏</p>
+								
+								<div><b>￥45</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33081">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33081-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>阿迪达斯五人团队男士香水喷雾 100ml</p>
+								
+								<div><b>￥71</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35306">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35306-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹杏仁沐浴油 250ml</p>
+								
+								<div><b>￥149</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35307">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35307-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹玫瑰皇后沐浴啫喱 250mls</p>
+								
+								<div><b>￥129</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33085">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33085-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国 Coreana 高丽雅娜 SSO 绵羊油面霜 50ml</p>
+								
+								<div><b>￥131</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33090">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33090-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国 Coreana 高丽雅娜topcloud祛斑霜 50ml</p>
+								
+								<div><b>￥137</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33087">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33087-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国 Coreana 高丽雅娜 SSO 绵羊油精华50ml+面霜10ml</p>
+								
+								<div><b>￥141</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35149">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35149-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>美国 Gillette吉列 ProSkin Sensitive 3合1男士剃须个护组合</p>
+								
+								<div><b>￥144</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="33088">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33088-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国 Coreana 高丽雅娜 SHO 马油霜和肉毒原液两只装 70ml和2ml</p>
+								
+								<div><b>￥151</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35302">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35302-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹樱花润肤露 250ml</p>
+								
+								<div><b>￥169</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35303">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35303-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹乳木果丰凝润肤露250ml</p>
+								
+								<div><b>￥199</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35304">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33087-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹玫瑰皇后润肤露 250ml</p>
+								
+								<div><b>￥169</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35305">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35305-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>法国 L‘occitane 欧舒丹马鞭草润肤露 250ml</p>
+								
+								<div><b>￥169</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35251">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35251-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国正品代购兰芝睡眠面膜免洗夜间修护锁水补水保湿啫喱面膜70ml</p>
+								
+								<div><b>￥166</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35177">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35177-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>圣罗兰圣诞礼盒3件套香水/口红/睫毛膏</p>
+								
+								<div><b>￥799</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35267">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35267-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>黑、白吕洗发水</p>
+								
+								<div><b>￥135</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35268">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35268-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>紫吕洗发水</p>
+								
+								<div><b>￥135</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35176">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35176-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>大牌美妆四件套圣罗兰/兰蔻/资生堂</p>
+								
+								<div><b>￥799</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33599">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33599-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>现货DM芭乐雅Balea面膜保湿提亮肤色深层清洁补水滋润 10片</p>
+								
+								<div><b>￥110</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35265">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35265-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>雪花秀润致滋盈水乳精华3件套装</p>
+								
+								<div><b>￥1235</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35260">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35260-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Whoo后拱辰享雪玉凝系列礼盒套装</p>
+								
+								<div><b>￥1002</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35259">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35259-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Whoo后 津率享红华凝香水乳护肤套装 补水保湿紧致肌肤</p>
+								
+								<div><b>￥1075</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35258">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35258-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Whoo后 秘贴焕然新生精华液礼盒5件套</p>
+								
+								<div><b>￥1063</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35257">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35257-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Whoo后 气韵生拱辰享套装水乳护肤套装 滋润补水保湿</p>
+								
+								<div><b>￥905</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35256">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35256-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Whoo后 拱辰享水水沄系列礼盒6件套 保湿补水套装</p>
+								
+								<div><b>￥805</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35254">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35254-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国珂莱欧CLIO珍珠亮彩素颜霜</p>
+								
+								<div><b>￥204</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35253">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35253-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>韩国原装正品about me柠檬按摩膏祛黄亮肤美白清洁毛孔面部按摩霜</p>
+								
+								<div><b>￥141</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+					</ul>
+				</section>
+				<section id="luxurious" >
+					<h2>爱上轻奢</h2>
+					<ul>
+						<li class="item" data-id="33008">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33008-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>独家定制 Yanna Jewellery 欧美款施华洛世奇水晶嵌贝珠奢华典雅女士戒指8.6mm</p>
+								
+								<div><b>￥61</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33009">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33009-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>独家定制 Yanna Jewellery 欧美款施华洛世奇水晶嵌贝珠优雅气质女士戒指8.6mm</p>
+								
+								<div><b>￥61</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33011">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33011-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>	独家定制 Yanna Jewellery 欧美款施华洛世奇水晶嵌贝珠经典复古女士戒指8.6mm</p>
+								
+								<div><b>￥61</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+					
+						<li class="item" data-id="33054">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33054-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	法国 Christian Lacroix徽标系列黑色真皮皮带 CNLLB416</p>
+								
+								<div><b>￥599</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33061">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33061-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>法国 Christian Lacroix徽标系列电脑包 CNLTL416</p>
+								
+								<div><b>￥599</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33055">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33055-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	法国 Christian Lacroix深棕色真皮皮带 CNLLB625Y</p>
+								
+								<div><b>￥699</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33066">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33066-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	法国 Christian Lacroix深褐色电脑包 CNLTL625Y</p>
+								
+								<div><b>￥699</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33068">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33068-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	法国 Christian Lacroix菱形真皮折叠卡包 CNLLW418</p>
+								
+								<div><b>￥699</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33069">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33069-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	法国 Christian Lacroix菱形真皮折叠钱包 CNLLM418</p>
+								
+								<div><b>￥699</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34861">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34861-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>丹尼尔惠灵顿女士手表大表盘三种颜色，银边/金边两种</p>
+								
+								<div><b>￥908</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33371">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33371-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>Swiss Legend 瑞士传奇Atari系列不锈钢圆形银色和玫瑰色石英机芯女士手表</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33372">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33372-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	瑞士机芯 Swiss Legend 瑞士传奇 优雅拼色商务款精镶女士石英钢表</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33373">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33373-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	Invicta 因维克塔Pro Diver系列不锈钢圆形银色机械机芯男士手表</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33376">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33376-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	Swiss Legend 瑞士传奇Scubador系列不锈钢圆形黑色石英机芯男士手表</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33380">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33380-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>意大利经典 Roberto Cavalli 罗伯特卡沃利 孔雀蓝秋冬必备女士真丝丝巾</p>
+								
+								<div><b>￥699</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33381">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33381-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	意大利经典 Roberto Cavalli 罗伯特卡沃利 黑白花色秋冬必备女士真丝丝巾</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33382">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33382-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	意大利 Roberto Cavalli 罗伯特卡沃利 秋冬必备花色豹纹女士真丝丝巾</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33383">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33383-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	大牌尊享Valentino 华伦天奴优雅名媛时尚粉色真丝女士丝巾</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33386">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33386-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>意大利 Valentino 华伦天奴 优雅黑印花秋冬必备时尚女士真丝丝巾</p>
+								
+								<div><b>￥1111</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35172">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35172-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>独家现货 Coach 蔻驰 棕褐色性感蛇纹时尚女士必备真皮单肩斜挎手拿多用包</p>
+								
+								<div><b>￥1999</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35173">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35173-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>时尚撞色 Coach 蔻驰蓝色真皮百搭女士手提单肩包</p>
+								
+								<div><b>￥1999</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35174">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35174-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>	意大利经典 Roberto Cavalli 罗伯特卡沃利 黑白花色秋冬必备女士真丝丝巾</p>
+								
+								<div><b>￥1999</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						
+					</ul>
+				</section>
+				<section id="life">
+					<h2>居家生活</h2>
+					<ul>
+						
+						<li class="item" data-id="33501">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33501-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>	博朗oral-b儿童电动牙刷适合3岁以上儿童男/女款</p>
+								
+								<div><b>￥220</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33498">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33498-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国Braun博朗耳温枪6520型</p>
+								
+								<div><b>￥500</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33494">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33494-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3>资生堂 </h3>
+								<p>德国喜宝Hipp婴儿免敏无泪洗发水沐浴露二合一200ml 小海狮</p>
+								
+								<div><b>￥70</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+						<li class="item" data-id="35364">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35364-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>日本atex便携加热猫咪眼罩恒温USB遮光热敷眼罩消黑眼圈助眠</p>
+								
+								<div><b>￥195</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35360">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35360-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>日本2016年新款象印超轻保温杯480ml，SC48，世界的全能概念超轻设计独家技术SLIT超薄真空层仅厚1mm</p>
+								
+								<div><b>￥199</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35139">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35139-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>吉列 Gillette Blue II 旅行装手动剃须刀 5片装</p>
+								
+								<div><b>￥27</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35146">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35146-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>美国 Gillette吉列男士旅行装剃须刀Gillette 2 10支装</p>
+								
+								<div><b>￥27</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35113">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35113-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>吉列 Gillette 剃须泡清新柠檬型 200ml</p>
+								
+								<div><b>￥30</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35114">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35114-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>吉列 Gillette 剃须泡防敏型 200ml</p>
+								
+								<div><b>￥30</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35120">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35120-good-thumb-2.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>美国 Gillette吉列March 3男士敏感型剃须泡 250ml</p>
+								
+								<div><b>￥34</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35122">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35122-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>美国 Gillette吉列系列男士剃须泡 Conditioning 250ml</p>
+								
+								<div><b>￥34</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35124">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35124-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>美国 Gillette吉列系列男士剃须泡 Sensitive 250ml</p>
+								
+								<div><b>￥34</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35309">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35309-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 槐花香婴幼儿洗衣皂200g</p>
+								
+								<div><b>￥35</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35312">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35312-good-thumb-3.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 儿童牙刷5周岁以上 30g</p>
+								
+								<div><b>￥65</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35313">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35313-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 儿童学步筷子套装 100g</p>
+								
+								<div><b>￥79</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35314">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35314-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 儿童牙膏0～2岁 90g</p>
+								
+								<div><b>￥45</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35315">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35315-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 儿童安心牙膏3～5岁 90g</p>
+								
+								<div><b>￥45</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35316">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35316-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Pororo 宝露露 儿童牙膏5岁以上 90g</p>
+								
+								<div><b>￥35</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+												
+					</ul>
+				</section>
+				<section id="nutrition">
+					<h2>营养保健</h2>
+					<ul>
+						<li class="item" data-id="35414">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35414-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>Comvita康维他天然麦卢卡蜂蜜UMF10 500g 呵护肠胃</p>
+								
+								<div><b>￥325</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35413">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35413-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>澳洲Swisse钙片 维生素D3青少年孕妇老人成人补钙150粒VD</p>
+								
+								<div><b>￥130</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35412">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35412-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3> </h3>
+								<p>	澳洲Healthy Care Grape seed葡萄籽胶囊300粒12000mg</p>
+								
+								<div><b>￥160</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35415">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35415-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮swisse蔓越莓精华胶囊30粒曼越梅 妇科泌尿卵巢保养</p>
+								
+								<div><b>￥198</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35391">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35391-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNC、儿童Omega3</p>
+								
+								<div><b>￥415</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35389">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35389-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNC、儿童维生素咀嚼软糖</p>
+								
+								<div><b>￥421</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35388">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35388-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNC、儿童复合维生素咀嚼片、补充儿童体内所需的各种维生素</p>
+								
+								<div><b>￥401</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35387">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35387-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNC、儿童维生素咀嚼软糖</p>
+								
+								<div><b>￥485</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35386">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35386-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNCbaby鱼油、液体状更易baby吸收</p>
+								
+								<div><b>￥321</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35384">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35384-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>美国GNC儿童咀嚼钙片、补钙、强健骨骼</p>
+								
+								<div><b>￥315</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35383">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35383-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>加拿大kirkland可兰儿童综合维生素软糖250粒</p>
+								
+								<div><b>￥421</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35067">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35067-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>加拿大hoslita蜂胶胶囊，180粒装。降血糖抗菌消炎提高免疫力等等诸多功效，降血糖效果尤其佳</p>
+								
+								<div><b>￥262</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35066">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35066-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>Bill儿童牛初乳，增强免疫系统，帮助儿童骨骼成长发育，含有丰富的免疫球蛋白（IgG）</p>
+								
+								<div><b>￥206</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35065">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35065-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>伟博儿童鱼油</p>
+								
+								<div><b>￥226</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35011">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35011-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>加拿大bill野生蓝莓护眼咀嚼片，四岁以上儿童及成人均可食用</p>
+								
+								<div><b>￥215</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35510">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35510-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>NaturesWay佳思敏儿童深海鱼油软胶囊DHA水果味180粒澳洲进口 </p>
+								
+								<div><b>￥198</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35486">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35486-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>新西兰Comvita康维他麦卢卡10 儿童成人柠檬蜂蜜味棒棒糖10支</p>
+								
+								<div><b>￥70</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35425">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35425-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲版直邮Elevit 爱乐维孕妇营养叶酸备孕 孕期复合维生素100片</p>
+								
+								<div><b>￥350</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35423">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35423-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲Blackmores孕妇黄金素营养素180粒含叶酸DHA</p>
+								
+								<div><b>￥230</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35415">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35415-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮swisse蔓越莓精华胶囊30粒曼越梅 妇科泌尿卵巢保养</p>
+								
+								<div><b>￥98</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35413">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35413-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲Swisse钙片 维生素D3青少年孕妇老人成人补钙150粒VD</p>
+								
+								<div><b>￥130</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35412">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35412-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲Healthy Care Grape seed葡萄籽胶囊300粒12000mg</p>
+								
+								<div><b>￥160</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35410">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35410-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳佳宝Blackmores维他命C粉125克</p>
+								
+								<div><b>￥128</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35409">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35409-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>儿童必里通缓解感冒退烧药5到12岁 100ml</p>
+								
+								<div><b>￥80</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+					</ul>
+				</section>
+				<section id="baby">
+					<h2>进口母婴</h2>
+					<ul>
+						<li class="item" data-id="33109">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33109-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉1段800g 0到6个月</p>
+								
+								<div><b>￥121</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33111">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33111-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉2段800g 6到12个月</p>
+								
+								<div><b>￥121</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33112">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33112-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国 Nutrilon 牛栏金砖版婴幼儿罐装奶粉3段800g 2到3岁</p>
+								
+								<div><b>￥121</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33137">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33137-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>99元香港直邮德国 Hipp喜宝婴幼儿营养辅食 有机香蕉果泥 190g </p>
+								
+								<div><b>￥99</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33153">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/33153-good-thumb-1.jpg" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国 Hipp喜宝婴幼儿营养辅食 杏仁果汁 200ml</p>
+								
+								<div><b>￥25</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34986">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34986-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>荷兰牛栏婴儿铁罐奶粉1-3段，六罐包邮包税，每箱赠一盒米菲兔饼干8+</p>
+								
+								<div><b>￥940</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34983">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34983-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>荷兰牛栏婴儿奶粉六段，十二罐包邮包税，赠一盒8+米菲兔饼干。</p>
+								
+								<div><b>￥1164</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34953">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34953-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>荷兰牛栏婴儿奶粉五段一箱六罐包邮包税赠米菲兔8+饼干一盒</p>
+								
+								<div><b>￥1050</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35178">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35178-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>原装进口爱他美白金3段新生儿婴儿奶粉可澳洲直邮3段铂金装*3罐</p>
+								
+								<div><b>￥585</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35097">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35097-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲爱他美Aptamil/Profutura白金版高端婴幼儿奶粉2段二段900g*3罐</p>
+								
+								<div><b>￥658</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34833">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34833-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲贝拉米Bellamys一段婴儿有机奶粉1段900g*3罐</p>
+								
+								<div><b>￥530</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34916">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34916-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲代购新西兰进口A2Platinum1段婴幼儿牛奶粉900g*3罐</p>
+								
+								<div><b>￥720</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34776">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34776-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲进口Aptamil新西兰爱他美1段一段金0-6月婴儿婴幼儿奶粉*3罐</p>
+								
+								<div><b>￥495</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34892">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34892-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲进口Bellamys贝拉米2段有机婴幼儿奶粉三段900g可直邮*3罐</p>
+								
+								<div><b>￥530</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34902">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34902-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮a2奶粉3段900g进口白金版婴幼儿婴儿奶粉三段*3罐</p>
+								
+								<div><b>￥642</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34791">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34791-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮爱他美2段新西兰可瑞康Aptamil金装二段新生婴儿奶粉*3罐</p>
+								
+								<div><b>￥495</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34824">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34824-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮包邮新西兰可瑞康Aptamil金装爱他美加强婴幼儿奶粉3段*3罐</p>
+								
+								<div><b>￥495</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34909">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34909-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮贝拉米3段有机婴幼儿婴儿奶粉三段原装进口*3罐</p>
+								
+								<div><b>￥530</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35096">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35096-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮可瑞康爱他美Aptamil铂金白金版一1段婴儿奶粉*3罐</p>
+								
+								<div><b>￥565</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34900">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34900-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲直邮原装进口高端贵族a2铂金白金婴幼儿奶粉2段包邮*3罐</p>
+								
+								<div><b>￥720</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34903">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34903-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>直邮澳洲可瑞康羊奶粉1段新西兰进口三段婴儿宝宝羊奶粉*3罐</p>
+								
+								<div><b>￥710</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34906">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34906-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>直邮澳洲可瑞康羊奶粉2段新西兰进口二段婴儿宝宝羊奶粉*3罐</p>
+								
+								<div><b>￥710</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="35094">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/35094-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲可瑞康羊奶粉3段新西兰进口新生儿婴儿宝宝羊奶粉直邮3段*3罐</p>
+								
+								<div><b>￥710</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34832">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34832-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>澳洲Aptamil新西兰爱他美4段金版原装进口奶粉四段900g*3罐</p>
+								
+								<div><b>￥495</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="34816">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34816-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>bebe限量版婴幼儿铁盒面霜150ml</p>
+								
+								<div><b>￥70</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						<li class="item" data-id="33503">
+							<div class="imgbox"><img src="http://img.myzhenzhen.com/34900-good-thumb-1.png" alt=""  style="width:100%;"/></div>
+							<div class="goodInfo">
+								<h3></h3>
+								<p>德国Femibion孕妇复合维生素叶酸+DHA+碘2阶段</p>
+								
+								<div><b>￥500</b><a href="javascript:;">立即抢购</a></div>
+							</div>
+						</li>
+						
+					</ul>
+				</section>
+			</div>
+		</div>
+	</body>
+	<script>
+	//点击定位锚点  改变样式
+	$('nav li a').on('click',function(e){
+		e.stopPropagation();
+		$(this).parent().addClass('active').siblings().removeClass('active');
+		$(this).parent().prev().children('a').css('border','none');
+		$(this).parent().prev().siblings().children('a').css('border-right','1px solid #fff')
+	})
+	//滚动事件
+	$(window).scroll(function(){
+		if ($(window).scrollTop()>360){          
+	      	$('nav').css({
+	      		'position':'fixed',
+	      		'top':'0',
+	      		'left':'0'
+	      	});
+	    }else{
+	    	$('nav').css({
+	    		'position':'relative'
+	    	})
+	    }
+//	    if($(window).scrollTop()<1030){
+//	    	$('nav li').eq(0).addClass('active').siblings().removeClass('active');
+//	    }else if($(window).scrollTop()<2050){
+//	    	$('nav li').eq(1).addClass('active').siblings().removeClass('active');
+//	    }else if($(window).scrollTop()<3030){
+//	    	$('nav li').eq(2).addClass('active').siblings().removeClass('active');
+//	    }else if($(window).scrollTop()<3800){
+//	    	$('nav li').eq(3).addClass('active').siblings().removeClass('active');
+//	    }else{
+//	    	$('nav li').eq(4).addClass('active').siblings().removeClass('active');
+//	    }
+	});
+	
+	//js与ios交互	
+		function setupWebViewJavascriptBridge(callback) {
+	        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+	        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+	        window.WVJBCallbacks = [callback];
+	        var WVJBIframe = document.createElement('iframe');
+	        WVJBIframe.style.display = 'none';
+	        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+	        document.documentElement.appendChild(WVJBIframe);
+	        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+	   }
+        //检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		//遍历商品数组
+		
+		$.each($('.item'), function(i) {
+			$('.item').eq(i).click(function(e){
+				var goodid=$(this).attr('data-id');
+				//console.log(goodid);
+			})
+			if(isAndroid){
+				$('.item').eq(i).click(function(e){
+					e.preventDefault();
+					var goodid= $(this).attr('data-id');
+					//与安卓终端交互
+					window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+							    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+							    "height" : 287,
+							    "layout" : "grid",
+							    "link" : "to_goods_"+goodid,
+							    "linkType" : "app-inner",
+							    "name" : "to_goods_"+goodid,
+							    "position" : "4",
+							    "title" : "今日特惠",
+							    "type" : "nav",
+							    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+							    "width" : 212
+						}
+					}, function(response) {})
+					
+					return false;
+				});
+			}else{
+				//与ios终端交互
+				setupWebViewJavascriptBridge(function(bridge) {
+					$(".item").eq(i).click(function(e){
+						e.preventDefault()
+						var goodid=$(this).attr('data-id');
+						bridge.callHandler('testObjcCallback',{
+							'good_id':goodid,
+							"detailData":{
+							    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+							    "height" : 287,
+							    "layout" : "grid",
+							    "link" : "to_goods_"+goodid,
+							    "linkType" : "app-inner",
+							    "name" : "to_goods_"+goodid,
+							    "position" : "4",
+							    "title" : "今日特惠",
+							    "type" : "nav",
+							    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+							    "width" : 212
+							}
+						}, function(response) {})
+						return false;
+					});
+				})
+			}
+		});
+	</script>
+</html>

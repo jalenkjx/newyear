@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<script src="http://apps.bdimg.com/libs/zepto/1.1.4/zepto.min.js"></script>
+		<title></title>
+		<script>
+			var winWidth = window.innerWidth;
+			var fontSize = winWidth/750*100;
+			var html = document.documentElement;
+			html.style.fontSize = fontSize + "px";
+			window.onresize = function(){
+				var winWidth = window.innerWidth;
+				var fontSize = winWidth/750*100;
+				var html = document.documentElement;
+				html.style.fontSize = fontSize + "px";
+			}
+		</script>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+				border:none;
+			}
+			li{
+				list-style: none;
+			}
+			img{
+				display:block;
+				width:100%;
+			}
+			.wrapper{
+				background:#efefef;
+			}
+			h2{
+				font-size:.5rem;
+				height:1rem;
+				width:100%;
+				text-align: center;
+				line-height:1rem;
+				box-sizing: border-box;
+			}
+			h2 img{
+				width:100%;
+			}
+			h2 span{
+				display:inline-block;
+				text-align: center;
+				height:1rem;
+				font-size:.3rem;
+				line-height:1rem;
+			}
+			
+			ul{
+				overflow:hidden;
+			}
+			ul li{
+				width:3.65rem;
+				float:left;
+				background:#fff;
+				margin-bottom:.2rem;
+			}
+			ul li:nth-child(even){
+				margin-left:.2rem;
+			}
+			li .goodsInfo{
+				margin-top:.1rem;
+				height: .7rem;
+			    display: -webkit-box;
+			    -webkit-box-orient: vertical;
+			    -webkit-line-clamp: 2;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: normal;
+			    font-size:.24rem;
+			    line-height: .35rem;
+			    padding:0 .2rem;
+			    margin-bottom:.2rem;
+			    
+			}
+			li .price{
+				font-size:.24rem;
+				box-sizing: border-box;
+				padding-left:.2rem;
+				padding-bottom:.3rem;
+				position:relative;
+			}
+			.price span{
+				display:inline-block;
+				font-size:.32rem;
+				line-height:.42rem;
+			}
+			.price button{
+				width:1.2rem;
+				height:.42rem;
+				border:1px solid #e31436;
+				border-radius: .1rem;
+				background:#fff;
+				color:#E31436;
+				position:absolute;
+				right:.2rem;
+				bottom:.3rem;
+				font-size:.22rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header>
+				<img src="http://og20zwqwb.bkt.clouddn.com/europebg.jpg" alt="" />
+			</header>
+			<h2><img src="http://og20zwqwb.bkt.clouddn.com/christmastitle.png" alt="" /></h2>
+			<section>
+				<ul>
+					<li data-id="35302">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35302-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹樱花润肤露 250ml</p>
+						<div class="price">
+							￥<span>169</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35303">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35303-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹乳木果丰凝润肤露250ml</p>
+						<div class="price">
+							￥<span>199</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35304">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35304-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹玫瑰皇后润肤露 250ml</p>
+						<div class="price">
+							￥<span>169</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35305">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35305-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹马鞭草润肤露 250ml</p>
+						<div class="price">
+							￥<span>169</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35306">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35306-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹杏仁沐浴油 250ml</p>
+						<div class="price">
+							￥<span>149</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35307">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35307-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 L‘occitane 欧舒丹玫瑰皇后沐浴啫喱 250ml</p>
+						<div class="price">
+							￥<span>129</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33054">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33054-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 Christian Lacroix徽标系列黑色真皮皮带 CNLLB416</p>
+						<div class="price">
+							￥<span>599</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33068">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33068-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 Christian Lacroix菱形真皮折叠卡包 CNLLW418</p>
+						<div class="price">
+							￥<span>699</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33069">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33069-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 Christian Lacroix菱形真皮折叠钱包 CNLLM418</p>
+						<div class="price">
+							￥<span>699</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33070">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33070-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">法国 Christian Lacroix黑色真皮折叠卡包 CNLLW626</p>
+						<div class="price">
+							￥<span>699</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33371">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33371-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Swiss Legend 瑞士传奇Atari系列不锈钢圆形银色和玫瑰色石英机芯女士手表</p>
+						<div class="price">
+							￥<span>1111</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33376">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33376-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">Swiss Legend 瑞士传奇Scubador系列不锈钢圆形黑色石英机芯男士手表</p>
+						<div class="price">
+							￥<span>1111</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33380">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33380-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">意大利经典 Roberto Cavalli 罗伯特卡沃利 孔雀蓝秋冬必备女士真丝丝巾</p>
+						<div class="price">
+							￥<span>1111</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33381">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33381-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">意大利经典 Roberto Cavalli 罗伯特卡沃利 黑白花色秋冬必备女士真丝丝巾</p>
+						<div class="price">
+							￥<span>35</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33382">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33382-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">意大利 Roberto Cavalli 罗伯特卡沃利 秋冬必备花色豹纹女士真丝丝巾</p>
+						<div class="price">
+							￥<span>1111</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33383">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33383-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">大牌尊享Valentino 华伦天奴优雅名媛时尚粉色真丝女士丝巾</p>
+						<div class="price">
+							￥<span>1111</span><button>立即购买</button>
+						</div>
+					</li>
+
+					<li data-id="35404">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35404-good-thumb-1.jpg" alt="" /></div>
+						<p class="goodsInfo">香港正品代购法国兰蔻奇迹香氛香水女士花香持久淡雅清新香味</p>
+						<div class="price">
+							￥<span>558</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35403">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35403-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">香港代购法国Gucci/古驰忌妒我喷式淡香水100ml性感迷人花果香调持久</p>
+						<div class="price">
+							￥<span>418</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35401">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35401-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">Gucci/古驰Gucci/古琦竹韵竹节魅力女士香水性感木质75ml</p>
+						<div class="price">
+							￥<span>498</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="35398">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/35398-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">香港代购法国正品BurberryLondon巴宝莉经典老伦敦女士香水100ML持久</p>
+						<div class="price">
+							￥<span>278</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33468">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33468-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">香港代购法国Gucci/古驰忌妒我喷式淡香水100ml性感迷人花果香调持久</p>
+						<div class="price">
+							￥<span>418</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33460">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33460-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">【8盒包邮包税】德国爱他美aptamil1+/2+段600g，8盒一箱1480元直邮包邮包税</p>
+						<div class="price">
+							￥<span>1480</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33457">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33457-good-thumb-1.png" alt="" /></div>
+						<p class="goodsInfo">【6罐包邮包税】德国aptamil白金奶粉800g，6罐一箱直邮包邮包税</p>
+						<div class="price">
+							￥<span>1728</span><button>立即购买</button>
+						</div>
+					</li>
+					<li data-id="33454">
+						<div class="imgbox"><img src="http://img.myzhenzhen.com/33454-good-thumb-1.png?random=1977" alt="" /></div>
+						<p class="goodsInfo">【6罐包邮包税】德国爱他美aptamil蓝罐pre/1/2/3段800g</p>
+						<div class="price">
+							￥<span>1488</span><button>立即购买</button>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</body>
+	<script>
+		//js与ios交互	
+			function setupWebViewJavascriptBridge(callback) {
+		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+		        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+		        window.WVJBCallbacks = [callback];
+		        var WVJBIframe = document.createElement('iframe');
+		        WVJBIframe.style.display = 'none';
+		        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+		        document.documentElement.appendChild(WVJBIframe);
+		        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+		   }
+		//检测终端是安卓或ios
+        var u = navigator.userAgent;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
+		var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		if(isAndroid){
+			$('li','ul').on('click',function(e){
+				var goodid= $(this).attr('data-id');
+				console.log(goodid)
+				//与安卓终端交互
+				window.WebViewJavascriptBridge.callHandler('testObjcCallback',{
+					'good_id':goodid,
+					"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					
+				}, function(response) {})
+				e.preventDefault();
+				return false;
+			});
+		}else{
+			setupWebViewJavascriptBridge(function(bridge) {
+				$('li','ul').on('click',function(e){
+					//alert('iphone');
+					var goodid=$(this).attr('data-id');
+					console.log(goodid);
+					e.preventDefault()
+					bridge.callHandler('testObjcCallback',{
+						'good_id':goodid,
+						"detailData":{
+						    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+						    "height" : 287,
+						    "layout" : "grid",
+						    "link" : "to_goods_"+goodid,
+						    "linkType" : "app-inner",
+						    "name" : "to_goods_"+goodid,
+						    "position" : "4",
+						    "title" : "今日特惠",
+						    "type" : "nav",
+						    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+						    "width" : 212
+						}
+					}, function(response) {})
+				});
+			})
+		}	
+		
+	</script>
+</html>
