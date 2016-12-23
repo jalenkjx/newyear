@@ -103,6 +103,17 @@
 				bottom:.3rem;
 				font-size:.22rem;
 			}
+			.back{
+				width:.86rem;
+				height:2.7rem;
+				position:fixed;
+				top:5.2rem;
+				right:0;
+			}
+			.back img{
+				display:block;
+				width:100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -117,28 +128,28 @@
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/33153-good-thumb-1.jpg" alt="" /></div>
 						<p class="goodsInfo">德国 Hipp喜宝婴幼儿营养辅食 杏仁果汁 200ml</p>
 						<div class="price">
-							￥<span>25</span><button>立即购买</button>
+							￥<span>21</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="33155">
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/33155-good-thumb-1.jpg" alt="" /></div>
 						<p class="goodsInfo">德国 Hipp喜宝婴幼儿营养辅食 苹果香蕉泥 125g</p>
 						<div class="price">
-							￥<span>25</span><button>立即购买</button>
+							￥<span>24.9</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="33133">
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/33133-good-thumb-1.jpg" alt="" /></div>
-						<p class="goodsInfo">99元香港直邮德国 Hipp 喜宝婴幼儿舒适奶粉 300g</p>
+						<p class="goodsInfo">59元香港直邮德国 Hipp 喜宝婴幼儿舒适奶粉 300g</p>
 						<div class="price">
-							￥<span>99</span><button>立即购买</button>
+							￥<span>59</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="33134">
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/33134-good-thumb-1.jpg" alt="" /></div>
-						<p class="goodsInfo">99元香港直邮德国 Hipp 喜宝 益生菌婴幼儿奶粉3段 1岁以上 500g</p>
+						<p class="goodsInfo">65元香港直邮德国 Hipp 喜宝 益生菌婴幼儿奶粉3段 1岁以上 500g</p>
 						<div class="price">
-							￥<span>99</span><button>立即购买</button>
+							￥<span>65</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="33084">
@@ -208,7 +219,7 @@
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/35414-good-thumb-1.jpg" alt="" /></div>
 						<p class="goodsInfo">Comvita康维他天然麦卢卡蜂蜜UMF10 500g 呵护肠胃</p>
 						<div class="price">
-							￥<span>325</span><button>立即购买</button>
+							￥<span>571.4</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="35309">
@@ -241,9 +252,15 @@
 					</li>
 				</ul>
 			</section>
+			<div class="back">
+				<img src="http://og20zwqwb.bkt.clouddn.com/1yhtbtn01.png" alt="" />
+			</div>
 		</div>
 	</body>
 	<script>
+		$('.back').on('click',function(){
+			window.location.href = './newyear.html';
+		})
 		//js与ios交互	
 			function setupWebViewJavascriptBridge(callback) {
 		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }

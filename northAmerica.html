@@ -103,6 +103,17 @@
 				bottom:.3rem;
 				font-size:.22rem;
 			}
+			.back{
+				width:.86rem;
+				height:2.7rem;
+				position:fixed;
+				top:5.2rem;
+				right:0;
+			}
+			.back img{
+				display:block;
+				width:100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -208,14 +219,14 @@
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/35122-good-thumb-1.jpg" alt="" /></div>
 						<p class="goodsInfo">美国 Gillette吉列系列男士剃须泡 Conditioning 250ml</p>
 						<div class="price">
-							￥<span>34</span><button>立即购买</button>
+							￥<span>35</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="35124">
 						<div class="imgbox"><img src="http://img.myzhenzhen.com/35124-good-thumb-1.jpg" alt="" /></div>
 						<p class="goodsInfo">美国 Gillette吉列系列男士剃须泡 Sensitive 250ml</p>
 						<div class="price">
-							￥<span>34</span><button>立即购买</button>
+							￥<span>35</span><button>立即购买</button>
 						</div>
 					</li>
 					<li data-id="35147">
@@ -284,9 +295,15 @@
 					
 				</ul>
 			</section>
+			<div class="back">
+				<img src="http://og20zwqwb.bkt.clouddn.com/1yhtbtn05.png" alt="" />
+			</div>
 		</div>
 	</body>
 	<script>
+		$('.back').on('click',function(){
+			window.location.href = './newyear.html';
+		})
 		//js与ios交互	
 			function setupWebViewJavascriptBridge(callback) {
 		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }

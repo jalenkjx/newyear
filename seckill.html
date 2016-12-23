@@ -103,6 +103,17 @@
 				bottom:.3rem;
 				font-size:.22rem;
 			}
+			.back{
+				width:.86rem;
+				height:2.7rem;
+				position:fixed;
+				top:5.2rem;
+				right:0;
+			}
+			.back img{
+				display:block;
+				width:100%;
+			}
 		</style>
 	</head>
 	<body>
@@ -200,9 +211,15 @@
 					
 				</ul>
 			</section>
+			<div class="back">
+				<img src="http://og20zwqwb.bkt.clouddn.com/1yhtbtn02.png" alt="" />
+			</div>
 		</div>
 	</body>
 	<script>
+		$('.back').on('click',function(){
+			window.location.href = './newyear.html';
+		})
 		//js与ios交互	
 			function setupWebViewJavascriptBridge(callback) {
 		        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
