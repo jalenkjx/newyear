@@ -368,8 +368,37 @@
 						}
 					}, function(response) {})
 				});
+			});
+			$('li','ul').on('click',function(e){
+				var goodid=$(this).attr('data-id');
+				e.preventDefault();
+				callOC('testFunc',{
+					'good_id':goodid,
+					"detailData":{
+					    "bannerImg" : "http://img.myzhenzhen.com/popular_bn.png",
+					    "height" : 287,
+					    "layout" : "grid",
+					    "link" : "to_goods_"+goodid,
+					    "linkType" : "app-inner",
+					    "name" : "to_goods_"+goodid,
+					    "position" : "4",
+					    "title" : "今日特惠",
+					    "type" : "nav",
+					    "url" : "http://ogb5d8crf.bkt.clouddn.com/home_nav_icon_h5_yg_196.png",
+					    "width" : 212
+					   }
+				})
 			})
 		}	
-		
+		function callOC(func,param){
+//          var url= "func=" + func;
+////          for(var i in param)
+//          {
+//              url = url + "&" + i + "=" + param[i];
+//              //alert(i);
+//              //alert(param[i]);
+//          }
+            window.webkit.messageHandlers.Native.postMessage(param);
+        }
 	</script>
 </html>
